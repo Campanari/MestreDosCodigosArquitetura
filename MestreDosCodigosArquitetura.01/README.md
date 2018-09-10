@@ -12,8 +12,10 @@ Foram escolhidos alguns padrões:
 
 * Singleton<sup>[1][Singleton]</sup> (**Criacional**)
 * Decorator<sup>[2][Decorator]</sup> (**Estrutural**)
-* Decorator<sup>[3][Strategy]</sup> (**Comportamental**)
+* Strategy<sup>[3][Strategy]</sup> (**Comportamental**)
 * Chain of Responsibility<sup>[4][ChainOfResponsibility]</sup> (**Comportamental**)
+
+Além disso foram seguidos os 5 píncipios do SOLID<sup>[5][SOLID]</sup>
 
 [ChainOfResponsibility]: http://www.dofactory.com/net/chain-of-responsibility-design-pattern
 [Decorator]: http://www.dofactory.com/net/decorator-design-pattern

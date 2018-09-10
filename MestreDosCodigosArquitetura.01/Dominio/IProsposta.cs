@@ -1,4 +1,4 @@
-namespace MestreDosCodigosArquitetura._01
+namespace MestreDosCodigosArquitetura._01.Dominio
 {
     public interface IProposta
     {

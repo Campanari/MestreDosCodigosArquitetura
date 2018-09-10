@@ -1,4 +1,6 @@
 ﻿using System;
+using MestreDosCodigosArquitetura._01.Dominio.Fabricas;
+using MestreDosCodigosArquitetura._01.Dominio.Repositorios;
 
 namespace MestreDosCodigosArquitetura._01
 {
@@ -6,26 +8,22 @@ namespace MestreDosCodigosArquitetura._01
     {
         static void Main(string[] args)
         {
-            var cliente1 = new Cliente(
-                1,
-                new DateTime(1987, 6, 5),
-                new DateTime(2000, 1, 1),
-                1000,
-                20);
+            var cliente1 = ClienteRepositorio
+                .Obter(1);
 
             var propostaCliente1_1 = PropostaFabrica
                 .Instancia
                 .Criar(cliente1,
                     1,
                     3000,
-                    36);
+                    24);
 
             var propostaCliente1_2 = PropostaFabrica
                 .Instancia
                 .Criar(cliente1,
                     2,
                     3000,
-                    24);
+                    12);
 
             var propostas = new [] {
                 propostaCliente1_1,
@@ -34,7 +32,7 @@ namespace MestreDosCodigosArquitetura._01
 
             foreach (var proposta in propostas)
             {  
-                var aprovada = GerenteRepositorio
+                var aprovada = AnalistaCreditoRepositorio
                     .Obter()
                     .Aprovar(proposta);
 

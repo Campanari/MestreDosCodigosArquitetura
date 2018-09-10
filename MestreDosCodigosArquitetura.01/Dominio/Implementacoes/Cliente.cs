@@ -1,8 +1,8 @@
 using System;
 
-namespace MestreDosCodigosArquitetura._01
+namespace MestreDosCodigosArquitetura._01.Dominio.Implementacoes
 {
-    public class Cliente
+    public class Cliente : ICliente
     {
         public Cliente(ulong id, DateTime dataNascimento, DateTime dataAberturaConta, decimal salario, decimal saldo)
         {

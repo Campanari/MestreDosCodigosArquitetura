@@ -8,14 +8,15 @@ Para atender o a especificação foi proposto o seguinte problema:
 > * Gostaria de realizar uma proposta de empréstimo
 > * Receber resultado da proposta
 
-Foram escolhidos três padrões segundo a especificação acima, um padrão de cada categoria:
+Foram escolhidos alguns padrões:
 
 * Singleton<sup>[1][Singleton]</sup> (**Criacional**)
-
 * Decorator<sup>[2][Decorator]</sup> (**Estrutural**)
+* Decorator<sup>[3][Strategy]</sup> (**Comportamental**)
+* Chain of Responsibility<sup>[4][ChainOfResponsibility]</sup> (**Comportamental**)
 
-* Chain of Responsibility<sup>[3][ChainOfResponsibility]</sup> (**Comportamental**)
-
-[Singleton]: http://www.dofactory.com/net/singleton-design-pattern
-[Decorator]: http://www.dofactory.com/net/decorator-design-pattern
 [ChainOfResponsibility]: http://www.dofactory.com/net/chain-of-responsibility-design-pattern
+[Decorator]: http://www.dofactory.com/net/decorator-design-pattern
+[Singleton]: http://www.dofactory.com/net/singleton-design-pattern
+[Strategy]: https://www.dofactory.com/net/strategy-design-pattern
+[SOLID]: https://en.wikipedia.org/wiki/SOLID
